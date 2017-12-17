@@ -2,9 +2,60 @@
 .navbar-inverse {
     margin-bottom: 0 !important;
     border-radius: 0 !important;
+    border: 0 !important;
     /*height: 70px;*/
+    color: white;
 }
 
-.jumbotron {
-    margin: 0 !important;
+.navbar-header {
+    background: #E82D02;
 }
+
+.topNavbar {
+    background: #E82D02;
+}
+
+#mainNavbar li a {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#mainNavbar li:hover {
+    background: black;
+    /*color: black;*/
+}
+
+.jumboCarousel {
+    /*margin-top: 70px;*/
+    min-height: 300px;
+    min-width: 100%;
+}
+
+.carousel-caption {
+    color: white;
+    right: 0% !important;
+    left: 50% !important;
+    text-align: left !important;
+    max-width: 50%;
+    /*top: 1px;*/
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5%;
+    height: 100%;
+    vertical-align: middle !important;
+}
+
+
+/*.item {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}*/
+
+
+/*.carousel-inner {
+    float: right;
+}*/
