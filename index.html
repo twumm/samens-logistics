@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
     <!--Styles-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -17,25 +20,27 @@
 
 <body>
     <nav class="navbar navbar-inverse">
-        <div class="container-fluid topNavbar">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+        <div class="topNavbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Samens Logistics</a>
-            </div>
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="nav navbar-nav">
-                    <li class=""><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                <!--<ul class="nav navbar-nav navbar-right">
+                    <a class="navbar-brand" href="#">Samens Logistics Logo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class=""><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <!--<ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glypicon glypicon-log-in"></span>Login</a></li>
                 </ul>-->
+                </div>
             </div>
         </div>
     </nav>
@@ -57,33 +62,49 @@
                     <!--<img class="img-responsive" src="http://via.placeholder.com/1920x800" alt="Truck">-->
                     <div class="carousel-caption">
                         <h2>We Are Freight Management Experts</h2>
-                        <h5>Got freight? If so, you’ve found a brokering partner you can trust. We understand the complexities of local, national, and global supply chains and are highly skilled in freight management operations. From single deliveries to
-                            recurring and complex shipments, we can coordinate all of your shipping needs.</h5>
-                        <button>Get A Shipping Quote</button>
+                        <hr>
+                        <h5>Got freight? If so, you’ve found a brokering partner you can trust.
+                            <!--We understand the complexities of local, national, and global supply chains and are highly skilled in freight management operations. From single deliveries to-->
+                            <!--recurring and complex shipments, we can coordinate all of your shipping needs.-->
+                        </h5>
+                        <button type="button" class="btn" id="get-quote">Get A Shipping Quote</button>
                     </div>
                 </div>
 
-                <!--<div class="item">
-                    <img class="img-responsive" src="http://via.placeholder.com/1920x800" alt="Truck">
+                <div class="item">
+                    <img class="img-responsive" src="img/containers.jpg" alt="Containers">
+                    <!--<img class="img-responsive" src="http://via.placeholder.com/1920x800" alt="Truck">-->
                     <div class="carousel-caption">
-                        <h3>Something</h3>
-                        <p>Write something long here</p>
+                        <h2>Reliable Brokerage Services</h2>
+                        <hr>
+                        <h5>We rely on in-depth industry experience and utilize the latest freight management technologies.
+                            <!--to optimally match the needs of shippers with the capabilities of trucking companies nationwide. Put our knowledge to work for you and-->
+                            <!--experience what confidence and peace of mind in shipping feels like.-->
+                        </h5>
+                        <button type="button" class="btn" id="get-quote">Get A Shipping Quote</button>
                     </div>
-                </div>-->
+                </div>
 
-                <!--<div class="item">
-                    <img class="img-responsive" src="http://via.placeholder.com/1920x800" alt="Logistics">
+                <div class="item">
+                    <img class="img-responsive" src="img/logistics.jpg" alt="Logistics">
+                    <!--<img class="img-responsive" src="http://via.placeholder.com/1920x800" alt="Logistics">-->
                     <div class="carousel-caption">
-                        <h3>Something</h3>
-                        <p>Write something long here</p>
+                        <h2>Powered by Logistics</h2>
+                        <hr>
+                        <h5>Whether you’re moving freight locally or long distance, we successfully coordinate the transportation of goods from point of origin to point of consumption.
+                            <!--leverage the latest tools, technologies, and processes to successfully coordinate the transportation of goods from point of origin to point of consumption in the most efficient-->
+                            <!--and cost-effective manner. That’s the power of logistics. Let us show you what it means.-->
+                        </h5>
+                        <button type="button" class="btn" id="get-quote">Get A Shipping Quote</button>
                     </div>
-                </div>-->
+                </div>
 
             </div>
 
         </div>
 
     </div>
+    <hr>
 
     <div class="jumbotron">
         <div class="container-fluid text-center">
@@ -96,7 +117,62 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="services">
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="img/customer-first1.jpg" alt="Image here">
+                    <div class="caption">
+                        <h3>Customer-First Mentality</h3>
+                        <p>Our success depends on the success of the companies we serve, which is why we take a customer-first approach to everything we do. Our sales and support staff will do everything in their power to meet your exact shipping needs while
+                            looking for opportunities to reduce costs, minimize overhead, and streamline the freight delivery process. With us as your logistics provider, you can focus your time and energy on more important aspects of running your business.</p>
+                        <!--other than shipping.</p>-->
+                        <a href="#" class="btn btn-primary" role="button">Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="img/supply-chain.jpg" alt="Image here">
+                    <div class="caption">
+                        <h3>Supply Chain Management</h3>
+                        <p>From point of origin to point of consumption, we make it fast, easy, and affordable to bring your goods to market. Routing, scheduling, and delivery are our specialties, and we promise to find the most cost-effective means to get
+                            your freight where it needs to go, on time. Whether you’re looking for a new dedicated regional fleet or want to explore additional supply chains to meet the growing shipping needs of your growing business, we can help.</p>
+                        <a href="#" class="btn btn-primary" role="button">Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="img/vans.jpg" alt="Image here">
+                    <div class="caption">
+                        <h3>Vans, Flatbeds and More</h3>
+                        <p>Our extensive nationwide network of motor carriers allows us to meet all of your shipping needs. From dry goods and perishables to hazardous cargo and oversized equipment, no shipment is too big, too small, or too complex for us.
+                            <!--And thanks to reliability and dependability of the carriers we contract with, -->
+                            You can rest assured that your freight will arrive on time and without damage. Request your free online freight quote or call us today to discuss your freight hauling needs and to learn how we can get your shipment where it needs to go.</p>
+                        <a href="#" class="btn btn-primary" role="button">Click Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container" id="about-us">
+        <h3>Who we are</h3>
+        <p class="text-left">When it absolutely, positively has to get there on time, you can count on us to deliver. More than freight brokers, we’re the reliable logistics partner you’ve been looking for. As a whole, we’re only as successful as the individuals and companies
+            we serve, which is why we do everything we can to bring success to our shippers by leveraging our experience and expertise to reduce costs, maximize profitability, and streamline the supply chain. We take the guesswork and headache out of
+            shipping, which gives decision-makers like you more time to focus on the core areas of your business.<br><br> No matter the type of freight you need to move, where it’s headed, or how fast it needs to get there, our knowledge combined with
+            our extensive logistics network of flatbed trucks, dry vans, reefers, goosenecks, step decks, and lowboys allows us to meet your shipping needs without fail, and certainly without delay. We only work with the most reliable carriers in the
+            nation, which gives our shippers the confidence and peace of mind of knowing their valuable freight is in the right hands.<br><br> Count on us for all your shipping needs. No restrictions on size, location, or destination means your search
+            for a freight broker is over. We accept single item shipments, less-than-truckload (LTL), dedicated full truckload (FTL), container freight, and more. Whatever you have and wherever it’s going, let us coordinate all of your shipping needs.
+            Call us today to speak with one of our freight consultants, or request your free online freight quote to see how fast, affordable, and easy we make it to meet all of your shipping commitments.<br><br>
+        </p>
+    </div>
+    <hr>
+
+    <!--<div class="container">
         <div class="row">
             <div class="col-sm-4">Image here</div>
             <div class="col-sm-8">
@@ -105,9 +181,7 @@
                 <button class="">Get Quote</button>
             </div>
         </div>
-    </div>
-
-    <div></div>
+    </div>-->
 
 </body>
 
