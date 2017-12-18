@@ -1,3 +1,9 @@
+body {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .navbar,
 .navbar-inverse {
     margin-bottom: 0 !important;
@@ -15,10 +21,26 @@
     background: #E82D02;
 }
 
+.topNavbar button {
+    border: none;
+}
+
+.topNavbar button:hover {
+    background: #FF5702 !important;
+}
+
+#mainNavbar {
+    border: none !important;
+}
+
+.collapse {
+    border: 0 !important;
+}
+
 #mainNavbar li a {
     color: white;
     font-size: 15px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 #mainNavbar li:hover {
@@ -46,6 +68,62 @@
     padding: 5%;
     height: 100%;
     vertical-align: middle !important;
+}
+
+#get-quote {
+    border: none;
+    background: #5cb85c;
+}
+
+#get-quote:hover {
+    background: #FF150B;
+    color: white;
+}
+
+#services thumbnail {
+    padding-top: 20px;
+}
+
+#services img {
+    max-width: 320px;
+    max-height: 150px;
+}
+
+#services p {
+    text-align: left;
+}
+
+
+/*Media queries for screens less than 600px*/
+
+@media (max-width: 600px) {
+    .jumboCarousel {
+        /*margin-top: 70px;*/
+        min-height: 200px;
+        min-width: 100%;
+    }
+    .carousel-caption {
+        color: white;
+        right: 0% !important;
+        left: 0% !important;
+        text-align: left !important;
+        max-width: 100% !important;
+        bottom: initial;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+    }
+    .carousel-caption img {
+        height: 500px !important;
+    }
+    .carousel-caption h2 {
+        font-size: 20px;
+        padding-top: 0;
+        margin: 0;
+    }
+    .carousel-caption hr {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
