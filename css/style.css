@@ -177,17 +177,19 @@ body {
 
 /*Media queries for screens less than 600px*/
 
-@media (max-width: 500px) {
+
+/*@media (max-width: 500px) {
     .jumboCarousel {
         margin-top: 50px;
     }
-}
+}*/
 
 @media (max-width: 600px) {
     .jumboCarousel {
         /*margin-top: 70px;*/
         min-height: 200px;
         min-width: 100%;
+        margin-top: 50px;
     }
     .jumboCarousel .carousel-caption {
         color: white;
