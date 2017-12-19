@@ -70,14 +70,24 @@ body {
     vertical-align: middle !important;
 }
 
-#get-quote {
+.get-quote-btn {
     border: none;
     background: #5cb85c;
+    color: white;
 }
 
-#get-quote:hover {
+.get-quote-btn:hover {
     background: #FF150B;
-    color: white;
+    color: white !important;
+}
+
+#serve-text {
+    background-color: white;
+}
+
+#serve-text h2 {
+    font-size: 45px;
+    color: #5cb85c;
 }
 
 #services thumbnail {
@@ -91,6 +101,17 @@ body {
 
 #services p {
     text-align: left;
+    line-height: 160%;
+}
+
+#about-us h3 {
+    font-size: 30px;
+    color: #5cb85c;
+}
+
+#about-us p {
+    font-weight: 600px !important;
+    line-height: 25px;
 }
 
 
