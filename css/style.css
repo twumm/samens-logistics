@@ -177,6 +177,12 @@ body {
 
 /*Media queries for screens less than 600px*/
 
+@media (max-width: 500px) {
+    .jumboCarousel {
+        margin-top: 50px;
+    }
+}
+
 @media (max-width: 600px) {
     .jumboCarousel {
         /*margin-top: 70px;*/
