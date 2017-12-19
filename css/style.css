@@ -41,11 +41,11 @@ body {
     color: white;
     font-size: 15px;
     /*text-transform: uppercase;*/
+    transition: all .5s ease;
 }
 
-#mainNavbar li:hover {
-    background: black;
-    /*color: black;*/
+#mainNavbar li a:hover {
+    color: black !important;
 }
 
 .jumboCarousel {
@@ -54,7 +54,7 @@ body {
     min-width: 100%;
 }
 
-.carousel-caption {
+.jumboCarousel .carousel-caption {
     color: white;
     right: 0% !important;
     left: 50% !important;
@@ -114,6 +114,44 @@ body {
     line-height: 25px;
 }
 
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+
+#quote-carousel .item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+#quote-carousel p {
+    font-size: 25px;
+    line-height: 40px;
+    color: #85012E;
+}
+
+.footer {
+    background: #E82D02;
+    padding: 10px 0;
+}
+
+.footer address {
+    color: white;
+}
+
+.footer #social a {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    /*border-right: 1px solid #70726F;*/
+    transition: all .5s ease;
+}
+
+.footer #social a:hover {
+    color: #000000;
+    /*color: #70726F;*/
+}
+
 
 /*Media queries for screens less than 600px*/
 
@@ -123,7 +161,7 @@ body {
         min-height: 200px;
         min-width: 100%;
     }
-    .carousel-caption {
+    .jumboCarousel .carousel-caption {
         color: white;
         right: 0% !important;
         left: 0% !important;
@@ -133,15 +171,15 @@ body {
         background: rgba(0, 0, 0, 0.5);
         height: 100%;
     }
-    .carousel-caption img {
+    .jumboCarousel .carousel-caption img {
         height: 500px !important;
     }
-    .carousel-caption h2 {
+    .jumboCarousel .carousel-caption h2 {
         font-size: 20px;
         padding-top: 0;
         margin: 0;
     }
-    .carousel-caption hr {
+    .jumboCarousel .carousel-caption hr {
         margin: 0;
         padding: 0;
     }
