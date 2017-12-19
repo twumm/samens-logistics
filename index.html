@@ -10,6 +10,7 @@
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <!--Styles-->
     <link rel="stylesheet" href="css/style.css">
@@ -19,7 +20,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="topNavbar">
             <div class="container">
                 <div class="navbar-header">
@@ -28,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <a class="navbar-brand" href="#">Samens Logistics Logo</a>
+                    <a class="navbar-brand" href="#" id="home">Samens Logistics Logo</a>
                 </div>
                 <div class="collapse navbar-collapse" id="mainNavbar">
                     <ul class="nav navbar-nav navbar-right">
@@ -47,7 +48,7 @@
 
     <div class="jumboCarousel">
         <!--Carousel-->
-        <div id="topCarousel" class="carousel slide" data-ride="carousel">
+        <div id="topCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
             <!--Indicators-->
             <ol class="carousel-indicators">
                 <li data-target="topCarousel" data-slide-to="0" class="active"></li>
@@ -92,7 +93,7 @@
                             <!--leverage the latest tools, technologies, and processes to successfully coordinate the transportation of goods from point of origin to point of consumption in the most efficient-->
                             <!--and cost-effective manner. That’s the power of logistics. Let us show you what it means.-->
                         </h5>
-                        <button type="button" class="get-quote-btn">Get A Shipping Quote</button>
+                        <button type="button" class="btn get-quote-btn">Get A Shipping Quote</button>
                     </div>
                 </div>
 
@@ -164,15 +165,81 @@
     </div>
     <hr>
     <div class="container" id="about-us">
-        <h3>Who we are</h3>
-        <p class="text-left">When it absolutely, positively has to get there on time, you can count on us to deliver. More than freight brokers, we’re the reliable logistics partner you’ve been looking for. As a whole, we’re only as successful as the individuals and companies
-            we serve, which is why we do everything we can to bring success to our shippers by leveraging our experience and expertise to reduce costs, maximize profitability, and streamline the supply chain. We take the guesswork and headache out of
-            shipping, which gives decision-makers like you more time to focus on the core areas of your business.<br><br> No matter the type of freight you need to move, where it’s headed, or how fast it needs to get there, our knowledge combined with
-            our extensive logistics network of flatbed trucks, dry vans, reefers, goosenecks, step decks, and lowboys allows us to meet your shipping needs without fail, and certainly without delay. We only work with the most reliable carriers in the
-            nation, which gives our shippers the confidence and peace of mind of knowing their valuable freight is in the right hands.<br><br> Count on us for all your shipping needs. No restrictions on size, location, or destination means your search
-            for a freight broker is over. We accept single item shipments, less-than-truckload (LTL), dedicated full truckload (FTL), container freight, and more. Whatever you have and wherever it’s going, let us coordinate all of your shipping needs.
-            Call us today to speak with one of our freight consultants, or request your free online freight quote to see how fast, affordable, and easy we make it to meet all of your shipping commitments.<br><br>
-        </p>
+        <h3>Who We Are</h3>
+        <blockquote>
+            <p class="text-left">When it absolutely, positively has to get there on time, you can count on us to deliver. More than freight brokers, we’re the reliable logistics partner you’ve been looking for. As a whole, we’re only as successful as the individuals and companies
+                we serve, which is why we do everything we can to bring success to our shippers by leveraging our experience and expertise to reduce costs, maximize profitability, and streamline the supply chain. We take the guesswork and headache out
+                of shipping, which gives decision-makers like you more time to focus on the core areas of your business.<br><br> No matter the type of freight you need to move, where it’s headed, or how fast it needs to get there, our knowledge combined
+                with our extensive logistics network of flatbed trucks, dry vans, reefers, goosenecks, step decks, and lowboys allows us to meet your shipping needs without fail, and certainly without delay. We only work with the most reliable carriers
+                in the nation, which gives our shippers the confidence and peace of mind of knowing their valuable freight is in the right hands.<br><br> Count on us for all your shipping needs. No restrictions on size, location, or destination means
+                your search for a freight broker is over. We accept single item shipments, less-than-truckload (LTL), dedicated full truckload (FTL), container freight, and more. Whatever you have and wherever it’s going, let us coordinate all of your
+                shipping needs. Call us today to speak with one of our freight consultants, or request your free online freight quote to see how fast, affordable, and easy we make it to meet all of your shipping commitments.<br><br>
+            </p>
+        </blockquote>
+
+        <!--Testimonials-->
+        <h3>What Our Customers Say</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" data-interval="8000" id="quote-carousel">
+
+                        <!-- Bottom Carousel Indicators -->
+                        <!--<ol class="carousel-indicators">
+                            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#quote-carousel" data-slide-to="1"></li>
+                            <li data-target="#quote-carousel" data-slide-to="2"></li>
+                        </ol>-->
+
+                        <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner text-center">
+
+                            <!-- Quote 1 -->
+                            <div class="item active">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                            <p>"These guys always make sure my goods reach their destination on time, and I haven't had a single damage claim yet. I wouldn't trust my shipments with anyone else now that I've experienced the best."</p>
+                                            <small><strong>Dwayne G.</strong></small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+
+                            <!-- Quote 2 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                            <p>"Since partnering with them I'm able to focus more of my time on other areas of my business now that my shipping is handled by people who know logistics inside and out. My business is doing better than ever,
+                                                and I have these guys to thank."</p>
+                                            <small><strong>Jim R. </strong></small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+
+                            <!-- Quote 3 -->
+                            <div class="item">
+                                <blockquote>
+                                    <div class="row">
+                                        <div class="col-sm-8 col-sm-offset-2">
+                                            <p>"As long as they've handled by freight deliveries, my shipments have been picked up and delivered on time without any issue. I've gone through numerous freight brokers in the past, but none have been as reliable
+                                                (or helpful) as the folks who handle my logistics now."</p>
+                                            <small><strong>Mike H.</strong></small>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <hr>
 
@@ -187,8 +254,37 @@
         </div>
     </div>-->
 
-    <footer class="container-fluid text-center">
-        <p>Footer Text</p>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <address>
+                        Samens Logistics LLC<br>
+                        2 Professional drive #229<br>
+                        Gaithersburg, MD 20879<br>
+                        <span class="glyphicon glyphicon-phone-alt"> </span> 301-327-6926<br>
+                    </address>
+                </div>
+                <div class="col-md-4" id="footer-links">
+                    <p>Quick Links:</p>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#home">Services</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#footer">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center" id="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-skype"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
