@@ -137,6 +137,28 @@ body {
 
 .footer address {
     color: white;
+    line-height: 25px;
+}
+
+.footer #footer-links {
+    color: white;
+}
+
+.footer #footer-links ul {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer #footer-links li a {
+    text-decoration: none;
+    color: white;
+    transition: all .5s ease;
+}
+
+.footer #footer-links li a:hover {
+    color: black;
 }
 
 .footer #social a {
@@ -182,6 +204,9 @@ body {
     .jumboCarousel .carousel-caption hr {
         margin: 0;
         padding: 0;
+    }
+    #footer {
+        text-align: center;
     }
 }
 
